@@ -787,19 +787,15 @@ p {
 }
 
 .policy-label {
-  position: relative;
   align-items: center;
   cursor: pointer;
-  padding-left: 24px;
   color: #8e8f99;
 }
 
 .custom-checkbox {
   display: inline-flex;
-  position: absolute;
   left: 0;
   top: 50%;
-  transform: translateY(-50%);
   width: 16px;
   height: 16px;
   align-items: center;
