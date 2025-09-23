@@ -469,83 +469,92 @@
         </div>
         <div class="footer-subscribe">
           <p class="footer-social-text">Subscribe</p>
-          <div class="footer-form-box">
-            <form class="footer-form">
+          <!-- <div class="footer-form-box"> -->
+          <form class="footer-form">
+            <label class="footer-form-box" for="sub-email">
               <input
                 class="footer-input"
+                id="sub-email"
+                name="sub-email"
                 type="email"
                 placeholder="E-mail"
                 required
               />
-              <button class="footer-btn" type="submit">
-                Subscribe
-                <svg class="footer-btn-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-paperplane"></use>
-                </svg>
-              </button>
-            </form>
-          </div>
+            </label>
+            <button class="footer-btn" type="submit">
+              Subscribe
+              <svg class="footer-btn-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-paperplane"></use>
+              </svg>
+            </button>
+          </form>
+          <!-- </div> -->
         </div>
       </div>
     </footer>
 
-    <div class="modal-overlay">
+    <div class="modal-overlay is-open">
       <div class="modal">
         <button class="modal-close-btn" type="button">
-          <svg class="modal-close-icon" width="24" height="24">
+          <svg class="modal-close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close-btn"></use>
           </svg>
         </button>
-        <h2 class="modal-title">
-          Leave your contacts and we will call you back
-        </h2>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="modal-form">
           <div class="modal-form-item">
-            <svg class="modal-form-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-name"></use>
-            </svg>
-            <label class="modal-label modal-text" for="name">Name</label>
-            <input
-              class="modal-input modal-text"
-              type="text"
-              id="name"
-              name="name"
-              required
-            />
+            <label class="modal-label modal-text" for="user-name">Name</label>
+            <div class="modal-input-box">
+              <input
+                class="modal-input modal-text"
+                type="text"
+                id="user-name"
+                name="user-name"
+                required
+              />
+              <svg class="modal-form-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-name"></use>
+              </svg>
+            </div>
           </div>
           <div class="modal-form-item">
-            <svg class="modal-form-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-phone"></use>
-            </svg>
             <label class="modal-label modal-text" for="phone">Phone</label>
-            <input
-              class="modal-input modal-text"
-              type="tel"
-              id="phone"
-              name="phone"
-              required
-            />
+            <div class="modal-input-box">
+              <input
+                class="modal-input modal-text"
+                type="tel"
+                id="phone"
+                name="phone"
+                required
+              />
+              <svg class="modal-form-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
           </div>
           <div class="modal-form-item">
-            <svg class="modal-form-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-email"></use>
-            </svg>
             <label class="modal-label modal-text" for="email">Email</label>
-            <input
-              class="modal-input modal-text"
-              type="email"
-              id="email"
-              name="email"
-              required
-            />
+            <div class="modal-input-box">
+              <input
+                class="modal-input modal-text"
+                type="email"
+                id="email"
+                name="email"
+                required
+              />
+              <svg class="modal-form-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
           </div>
-          <div class="modal-form-item">
-            <label class="modal-label modal-text" for="comment">Comment</label>
+          <div class="modal-form-item modal-texttarea-item">
+            <label class="modal-label modal-text" for="user-comment"
+              >Comment</label
+            >
             <textarea
               class="modal-textarea modal-text"
-              id="comment"
-              name="comment"
-              rows="6"
+              id="user-comment"
+              name="user-comment"
               placeholder="Text input"
             ></textarea>
           </div>
@@ -553,14 +562,17 @@
             <input
               class="policy-checkbox visually-hidden"
               type="checkbox"
-              id="policy"
-              name="policy"
+              id="user-policy"
+              name="user-policy"
+              value="true"
               required
             />
-            <label class="policy-label modal-text" for="policy">
-              <svg class="policy-icon" width="10" height="8">
-                <use href="./images/icons.svg#icon-check"></use>
-              </svg>
+            <label class="policy-label modal-text" for="user-policy">
+              <span class="custom-checkbox">
+                <svg class="policy-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
               I accept the terms and conditions of the&nbsp;
               <a class="policy-link" href="#">Privacy Policy</a></label
             >
