@@ -776,7 +776,7 @@ p {
 }
 
 .policy {
-  display: flex;
+  /* display: flex; */
   align-items: center;
   gap: 8px;
   margin-bottom: 24px;
@@ -788,7 +788,6 @@ p {
 
 .policy-label {
   position: relative;
-  /* display: flex; */
   align-items: center;
   cursor: pointer;
   padding-left: 24px;
