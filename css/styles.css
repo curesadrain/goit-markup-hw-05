@@ -586,7 +586,6 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 16px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -695,9 +694,6 @@ p {
 }
 
 .modal-form {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
 }
 
 .modal-form-item {
@@ -776,7 +772,6 @@ p {
 }
 
 .policy {
-  /* display: flex; */
   align-items: center;
   gap: 8px;
   margin-bottom: 24px;
@@ -825,6 +820,7 @@ p {
 }
 
 .modal-submit-btn {
+  display: block;
   cursor: pointer;
   background-color: #4d5ae5;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
